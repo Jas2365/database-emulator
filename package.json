@@ -1,0 +1,12 @@
+{
+  "name": "database emulator",
+  "version": "1.0.0",
+  "description": "a basic databse emulator",
+  "main": "databse.js",
+  "type": "module",
+  "scripts": {
+    "run": "node database.js"
+  },
+  "author": "Jas2365",
+  "license": "ISC"
+}
