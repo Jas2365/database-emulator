@@ -10,7 +10,7 @@ async function main() {
   console.log("========= Test Database ==========")
   while (true) {
 
-    const command = (await question("Command >> ")).trim().toLowerCase();
+    const command = (await question("Database >> ")).trim().toLowerCase();
 
     switch (command) {
       // help
