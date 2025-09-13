@@ -3,7 +3,7 @@ import { question, closePrompt } from "./prompt.js";
 import { inputData } from "./inputData.js";
 import { editData } from "./editData.js";
 import { deleteAllData, deleteData } from "./deleteData.js";
-import { showData } from "./displayData.js";
+import { displayData } from "./displayData.js";
 import { searchData } from "./searchData.js";
 
 async function main() {
@@ -18,7 +18,7 @@ async function main() {
         console.log("all commands :")
         console.log("-- help")
         console.log("-- add")
-        console.log("-- show")
+        console.log("-- display")
         console.log("-- search")
         console.log("-- delete")
         console.log("   -- delete_all")
@@ -31,9 +31,9 @@ async function main() {
         await inputData();
         break;
 
-      // show
-      case Commands.SHOW:
-        showData();
+      // display
+      case Commands.DISPLAY:
+        displayData();
         break;
 
       // search

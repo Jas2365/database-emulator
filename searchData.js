@@ -1,13 +1,14 @@
 import { loadData } from "./dataStore.js";
 import { question } from "./prompt.js";
+import { isAlphanumeric } from "./utils.js";
 
 /**
  * @param {string|number} query - ID (number) or name (string)
  * @returns {Object} - Matching entries
  */
-export const searchData = async () => {
+export async function searchData() {
   const query = (await question("Enter ID: ")).toUpperCase().trim();
-  let results = {};
+  if (!isAlphanumeric(query)) return {};
   const data = loadData();
 
   if (!data.length) {
@@ -15,7 +16,7 @@ export const searchData = async () => {
     return {};
   }
 
-  results = data.find(entry => { return entry.id == query })
+  const results = data.find(entry => { return entry.id == query })
   if (!results) {
     console.log("No matching entry found for:", query);
   } else {

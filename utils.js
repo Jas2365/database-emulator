@@ -15,3 +15,7 @@ export const UniqueId = () => {
   const part3 = generate10Id(letters, 4);
   return part1 + part2 + part3;
 }
+
+export function isAlphanumeric(input) {
+  return /^[A-Z0-9]+$/i.test(input);
+}

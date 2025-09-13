@@ -1,7 +1,7 @@
 export const Commands = Object.freeze({
   HELP: 'help',
   ADD: 'add',
-  SHOW: 'show',
+  DISPLAY: 'display',
   SEARCH: 'search',
   DELETE: 'delete',
   DELETE_ALL: 'delete_all',

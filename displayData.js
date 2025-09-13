@@ -1,7 +1,7 @@
 import { readFileSync, existsSync } from "fs";
 import { FILE_NAME } from "./constants.js";
 
-export const showData = () => {
+export const displayData = () => {
   if (!existsSync(FILE_NAME)) {
     console.log("No data file found");
     return;
