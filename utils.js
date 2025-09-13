@@ -1,4 +1,3 @@
-
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const digits = '0123456789';
 

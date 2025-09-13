@@ -1,4 +1,4 @@
-import { loadData, saveData, searchData } from "./dataStore.js";
+import { loadData, saveData } from "./dataStore.js";
 import { question } from "./prompt.js"
 
 export const editData = async () => {
