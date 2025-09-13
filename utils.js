@@ -16,5 +16,3 @@ export const UniqueId = () => {
   const part3 = generate10Id(letters, 4);
   return part1 + part2 + part3;
 }
-
-console.log(UniqueId());
